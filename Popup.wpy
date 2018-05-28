@@ -1,0 +1,15 @@
+<template>
+  <view class="pop pop-{{type}} {{isShow?'pop-show':''}}">
+  <view 
+    @touchmove.stop="true"
+    class="pop-mask pop-mask-{{isOverlayShow?'show':'hide'}}"
+    @tap="hide"
+  />
+  <view class="pop-container">
+    <slot></slot>
+  </view>
+</view>
+</template>
+
+<style scoped lang="less" src='./Taping.less' />
+<script src="./Taping.js" />
