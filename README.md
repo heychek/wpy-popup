@@ -43,7 +43,7 @@ type 表示内容从哪个方向出现，可选 center top bottom left right
 > 如需获取用户点击蒙层部分事件（有时需要支持用户点击蒙层部分弹窗消失）。则需要在调用时添加`@hide.user="方法名"`，然后在 js 的 method 方法中定义该方法即可
 
 ```
-<Popup :isShow.sync="isShow" @hide.user="hidePop">
+<Popup :isShow.sync="isShow" :isOverlayShow.sync="showOverlay" :type.sync="type" @hide.user="hidePop">
     <view style="background-color: #fff; width: 500rpx; height: 500rpx;">
         test content
     </view>
@@ -61,7 +61,7 @@ method = {
 ```
 <template>
     <view>
-        <Popup :isShow.sync="isShow" @hide.user="hidePop">
+        <Popup :isShow.sync="isShow" :isOverlayShow.sync="showOverlay" :type.sync="type" @hide.user="hidePop">
             <view style="background-color: #fff; width: 500rpx; height: 500rpx;">
                 test content
             </view>
