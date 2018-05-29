@@ -5,13 +5,13 @@
 ### 一、安装
 
 ```
-npm install wpy-popup --save
+npm install wpy-pop --save
 ```
 
 ### 二、引用
 
 ```
-import Popup from 'wpy-popup';
+import Popup from 'wpy-pop';
 ```
 
 ### 三、声明组件

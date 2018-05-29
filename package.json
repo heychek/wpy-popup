@@ -1,7 +1,7 @@
 {
-  "name": "wpy-popup",
-  "version": "1.0.0",
-  "description": "wepy 框架下的小程序弹窗组件",
+  "name": "wpy-pop",
+  "version": "1.0.1",
+  "description": "wepy 框架下的小程序弹窗组件,支持传入 type，改变出现方式",
   "main": "Popup.wpy",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+git@github.com:hckisagoodboy/wpy-popup.git"
   },
   "keywords": [
-    "popup"
+    "popup", "wepy", "type"
   ],
   "author": "kevin",
   "license": "MIT",

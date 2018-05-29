@@ -6,12 +6,10 @@ export default class Taping extends wepy.component {
       type: Boolean,
       value: false
     },
-    // 遮罩层是否会显示
     isOverlayShow: {
       type: Boolean,
       value: true
     },
-    // 内容从哪个方向出，可选 center top bottom left right
     type: {
       type: String,
       value: 'center'
